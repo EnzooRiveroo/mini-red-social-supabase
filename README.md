@@ -61,5 +61,3 @@ Para ejecutar este proyecto localmente, necesitarás configurar tu propia instan
 4.  **Abrir la Aplicación:**
     * Simplemente abre el archivo `index.html` en tu navegador.
     * Alternativamente, usa una extensión de servidor local como Live Server en VS Code.
-
-## 📝 Estructura del Proyecto
