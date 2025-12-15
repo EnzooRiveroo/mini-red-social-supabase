@@ -19,7 +19,7 @@ Implementa una nube (feed) de publicaciones con persistencia de datos mediante S
 - Interfaz responsive
 
 ## 🔗 Demo
-(agregar link de GitHub Pages cuando esté publicado)
+https://enzooriveroo.github.io/mini-red-social-supabase/
 
 ## 📌 Objetivo del proyecto
 Proyecto realizado para practicar desarrollo frontend
