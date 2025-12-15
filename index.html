@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publica lo tuyo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="app-container">
+        <div class="app-header">
+            <h1 class="title">🌌</h1>
+            <button id="logoutBtn" class="logout-btn" style="display: none;">Cerrar sesión</button>
+        </div>
+
+        <div class="create-post">
+            <textarea id="postText" placeholder="🌌 Escribe algo épico..."></textarea>
+            <button id="publishBtn">Publicar</button>
+        </div>
+
+        <div class="filters">
+            <select id="filterSelect">
+                <option value="recent">Más recientes</option>
+                <option value="oldest">Más antiguos</option>
+                <option value="likes">Más likes</option>
+            </select>
+        </div>
+
+        <div id="postsContainer"></div>
+    </div>
+
+    <div id="editModal" class="modal-overlay hidden">
+        <div class="modal">
+            <h2>Editar publicación</h2>
+            <textarea id="editText"></textarea>
+            <button id="saveEdit">Guardar cambios</button>
+            <button id="cancelEdit" class="cancel">Cancelar</button>
+        </div>
+    </div>
+
+    <div id="deleteModal" class="modal-overlay hidden">
+        <div class="modal">
+            <h2>¿Eliminar publicación?</h2>
+            <p>Esta acción no se puede deshacer</p>
+            <button id="confirmDelete" class="delete">Eliminar</button>
+            <button id="cancelDelete" class="cancel">Cancelar</button>
+        </div>
+    </div>
+
+    <div id="loginBox" class="login-overlay">
+        <div class="login-box">
+            <label for="username">🌌 Decime tu nombre para iniciar sesión</label>
+            <input type="text" id="username" placeholder="Tu nombre">
+            <button id="saveName">Ingresar</button>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+        <p>© 2025 Enzo Rivero. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
